@@ -1,0 +1,69 @@
+@import './_mixins.scss';
+
+.form__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    width: 18rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    border-bottom: 2px solid rgb(39, 39, 39);
+    background: transparent;
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+
+  label {
+    margin-right: 1rem;
+    color: rgb(39, 39, 39);
+    select {
+      margin-left: 1rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.list__row {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 7rem;
+  padding: 0.7rem 0.1rem;
+  background-color: rgb(105, 105, 105);
+}
+
+.submit__btn {
+  @include blueBtn;
+  margin-top: 4rem;
+}
+
+.clear__btn {
+  @include redBtn;
+  width: 4rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}

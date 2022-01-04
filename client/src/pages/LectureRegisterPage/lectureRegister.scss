@@ -1,0 +1,41 @@
+@import '../../styles/_mixins.scss';
+@import '../../styles/_variables.scss';
+
+.register__page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: $bg-gray;
+}
+
+.register__header {
+  padding: 0.3rem;
+  background-color: $dark-blue;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 3px 5px;
+
+  div {
+    width: 13rem;
+    padding: 1rem;
+    color: rgb(213, 220, 226);
+  }
+}
+
+.register__wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  .table {
+    width: 50%;
+    table {
+      width: 100%;
+
+      td {
+        button {
+          @include blueBtn;
+        }
+      }
+    }
+  }
+}

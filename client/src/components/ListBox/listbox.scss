@@ -1,0 +1,38 @@
+.listbox__wrapper {
+  margin-left: 1rem;
+  border: none !important;
+  outline: none !important;
+}
+
+.listbox__list {
+  height: 6rem;
+  border: none !important;
+  outline: none !important;
+  overflow-y: auto;
+}
+
+.listbox__btn {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #000;
+  border-bottom: 1px solid #000 !important;
+}
+
+[data-reach-listbox-popover] {
+  border: none !important;
+  outline: none !important;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.692) !important;
+  z-index: 9;
+}
+
+[data-reach-listbox-option] {
+  height: 2rem;
+  font-size: 0.9rem;
+  &:hover,
+  :focus {
+    background-color: rgb(90, 151, 192);
+  }
+}

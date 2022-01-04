@@ -1,0 +1,13 @@
+@mixin blueBtn {
+  background-color: rgb(53, 101, 133);
+  &:hover {
+    background-color: rgb(66, 114, 146);
+  }
+}
+
+@mixin redBtn {
+  background-color: rgb(156, 47, 47);
+  &:hover {
+    background-color: rgb(184, 58, 58);
+  }
+}

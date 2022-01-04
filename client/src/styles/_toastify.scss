@@ -1,0 +1,21 @@
+.Toastify__toast-container {
+  border-radius: 8px !important;
+  width: 250px !important;
+  height: 60px !important;
+  min-height: 60px;
+  max-height: 60px;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  --toastify-color-error: #fff;
+  --toastify-icon-color-error: #9d1c24;
+  --toastify-text-color-error: #9d1c24;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  --toastify-color-success: #fff;
+  --toastify-icon-color-success: #155c35;
+  --toastify-text-color-success: #155c35;
+}

@@ -1,0 +1,57 @@
+@import '../../styles/_mixins.scss';
+
+.table__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  width: 1000px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  border-collapse: collapse;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.753);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  overflow: hidden;
+}
+
+td,
+th {
+  padding: 0.4rem;
+  color: #000;
+}
+
+td {
+  overflow: hidden;
+}
+
+thead {
+  th {
+    background: rgba(138, 138, 138, 0.781);
+    text-align: left;
+  }
+}
+
+tbody {
+  tr {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.034);
+    }
+  }
+  td {
+    font-size: 1rem;
+    button {
+      width: 4rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.update__btn {
+  @include blueBtn;
+}
+
+.delete__btn {
+  @include redBtn;
+}

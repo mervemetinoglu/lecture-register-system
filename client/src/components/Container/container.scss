@@ -1,0 +1,15 @@
+.container__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 8px;
+  width: 900px;
+  height: 600px;
+  background: rgb(190, 190, 190);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: relative;
+}

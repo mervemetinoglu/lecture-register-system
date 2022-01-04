@@ -1,0 +1,82 @@
+@import './toastify';
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: rgb(190, 190, 190);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.app__container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: $bg-gray;
+}
+
+.not_found__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+
+  &-thumb {
+    background: #b8b8b8;
+    border-radius: 3px;
+
+    &:hover {
+      background: #8b8b8b;
+    }
+  }
+
+  &-track {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+  }
+}

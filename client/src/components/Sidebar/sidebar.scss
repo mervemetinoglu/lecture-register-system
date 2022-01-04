@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.sidebar {
+  position: sticky;
+  width: 16rem;
+  height: 100%;
+  box-shadow: 0 0 7px #20252b;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-blue;
+}
+
+.sidebar__item {
+  color: rgb(216, 216, 216);
+  cursor: pointer;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+
+  a {
+    display: block;
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
+    color: rgb(216, 216, 216);
+
+    cursor: pointer;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  &:hover {
+    color: rgb(255, 255, 255);
+  }
+}
